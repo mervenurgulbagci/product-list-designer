@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Product List</title>
+</head>
+
+<body>
+    <header class="p-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top-item">
+                    <a href="#">Kampanyalar</a>
+                    <a href="#">Yardım</a>
+                    <a href="#">Neden Pasaj?</a>
+                </div>
+            </div>
+            <div class="header-mid">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/acme-logo.png" alt="logo">
+                        </a>
+
+                        <div class="search-area" style="z-index: 15;">
+                            <form class="search-area-form" id="search-area-form">
+                                <button class="btn-search" type="submit">
+                                    <i class="bi-search"></i>
+                                </button>
+                                <input class="form-control me-2" type="search" placeholder="Aranacak ürün adı"
+                                    aria-label="Search">
+                            </form>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <div class="tum-kategoriler">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link " href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                            <i class="bi bi-chevron-down"></i>
+                                            Tüm Kategoriler
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Android Telefonlar</a></li>
+                                            <li><a class="dropdown-item" href="#">Giyilebilir Teknolojiler</a></li>
+                                            <li><a class="dropdown-item" href="#">İOS Telefonlar</a></li>
+                                            <li><a class="dropdown-item" href="#">Tabletler</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <div class="person-circle">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                    aria-expanded="false" style="display: flex;"> 
+                                  
+                                    <i class="bi bi-person-circle"></i>
+                                    Hesabım
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profilim</a></li>
+                                <li><a class="dropdown-item" href="#">Siparişlerim</a></li>
+                            </ul>
+                        </li>
+                        <a class="sepet" href="#">
+                            <i class="bi-basket"></i>
+                            Sepetim
+                            <span class="header-basket-item">3</span>
+                        </a>
+                       
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header-bottom">
+                <a href="#">iPhone</a>
+                <a href="#">iPad</a>
+                <a href="#">Mac</a>
+                <a href="#">AppleTV</a>
+                <a href="#">Watch</a>
+                <a href="#">Aksesuar</a>
+            </div>
+
+        </div>
+        <!--Container-p bitti-->
+    </header><!-- header class sonlandı-->
+    <!-- product list start-->
+
+    <div class="container-product d-flex justify-content-center align-items-center ">
+        <div class="row row-cols-4 row-cols-lg-3 g-2 g-lg-3 d-flex justify-content-center align-items-center ">
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column
+                    <figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column<figure>
+                        <img src="img/iphone11.png" alt="iphone 11">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-footer">
+        <section class="m-p-section breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
+            style="--bs-breadcrumb-divider:'>'">
+            <div class="container">
+                <div class="p-footer-top">
+                    <ul class="a-p-breadcrumb" aria-label="Breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item"><a href="#">Cihazlar</a></li>
+                        <li class="breadcrumb-item"><a href="#">Akıllı Telefonlar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="p-footer-mid">
+            <div class="p-footer-mid-container">
+                <nav class="p-footer-nav">
+                    <div class="m-p-grid d-inline-flex">
+                        <div class="m-p-grid-col">
+                            <h3>
+                                <a href="#" title="Hakkımızda">Hakkımızda</a>
+                            </h3>
+                            <ul>
+                                <li><a href="#" title="Duyurular">Duyurular</a></li>
+                                <li><a href="#" title="Yatırımcı İlişkileri">Yatırımcı İlişkileri</a></li>
+                                <li><a href="#" title="Sosyal Sorumluluk">Sosyal Sorumluluk</a></li>
+                                <li><a href="#" title="Sponsorluk ve STK İlişkileri">Sponsorluk ve STK İlişkileri</a>
+                                </li>
+                                <li><a href="#" title="İnsan Kaynakları">İnsan Kaynakları</a></li>
+                                <li><a href="#" title="Logolarımız">Logolarımız</a></li>
+                                <li><a href="#" title="Video Galeri">Video Galeri</a></li>
+                                <li><a href="#" title="Bilgi Toplumu Hizmetleri">Bilgi Toplumu Hizmetleri</a></li>
+                                <li><a href="#" title="İletişim">İletişim</a></li>
+                            </ul>
+                        </div>
+                        <div class="m-p-grid-col">
+                            <h3>
+                                <a href="#" title="Popüler Linkler">Popüler Linkler</a>
+                            </h3>
+                            <ul>
+                                <li><a href="#" title="Cihazlar">Cihazlar</a></li>
+                                <li><a href="#" title="Paketler">Paketler</a></li>
+                                <li><a href="#" title="Dijital Servisler">Dijital Servisler</a></li>
+                                <li><a href="#" title="Ev Çözümleri">Ev Çözümleri</a></li>
+                                <li><a href="#" title="Fırsatlar">Fırsatlar</a></li>
+                                <li><a href="#" title="Engel Tanımayanlar">Engel Tanımayanlar</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="m-p-grid-col">
+                            <h3>
+                                <a href="#" title="Müşteri Hizmetleri">Müşteri Hizmetleri</a>
+                            </h3>
+                            <ul>
+                                <li><a href="#" title="Cihaz Ayar Desteği">Cihaz Ayar Desteği</a></li>
+                                <li><a href="#" title="Sipariş Takibi">Sipariş Takibi</a></li>
+                                <li><a href="#" title="İade Talebi">İade Talebi</a></li>
+                                <li><a href="#" title="Puk Sorgulama">Puk Sorgulama</a></li>
+                                <li><a href="#" title="Alacak Sorgulama/TL İade Talep">Alacak Sorgulama/TL İade
+                                        Talep</a></li>
+                                <li><a href="#" title="Şikayet Talebi Oluşturma">Şikayet Talebi Oluşturma</a></li>
+                                <li><a href="#" title="Şikayet Takibi">Şikayet Takibi</a></li>
+                            </ul>
+                        </div>
+                        <div class="m-p-grid-col">
+                            <h3>
+                                <a href="#" title="Lorem ipsum">Lorem İpsum</a>
+                            </h3>
+                            <ul>
+                                <li><a href="#" title="Lorem İpsum Dolor">Lorem İpsum Dolor</a></li>
+                                <li><a href="#" title="Sit Amet">Sit Amet</a></li>
+                                <li><a href="#" title="Consectuar">Consectuar</a></li>
+                                <li> <a href="#" title="Lorem İpsum Dolor">Lorem İpsum Dolor</a></li>
+                                <li><a href="#" title="Sit Amet">Sit Amet</a></li>
+                                <li><a href="#" title="Consectuar">Consectuar</a></li>
+                                <li> <a href="#" title="Lorem  Dolor">Lorem Dolor</a></li>
+                            </ul>
+                        </div>
+                        <div class="m-p-grid-col">
+                            <h3>
+                                <a href="#" title="Size En Yakın Mağaza">Size En Yakın Mağaza</a>
+                            </h3>
+                            <ul>
+                                <li> <a href="#" title="Lorem İpsum Dolor">Lorem İpsum Dolor</a></li>
+                                <li><a href="#" title="Sit Amet">Sit Amet</a></li>
+                                <li><a href="#" title="Consectuar">Consectuar</a></li>
+                                <li> <a href="#" title="Lorem İpsum Dolor">Lorem İpsum Dolor</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <hr class="p-footer-line">
+        <div class="p-footer-bottom">
+            <div class="p-footer-bottom-container">
+                <div class="grid">
+                    <div class="grid-col">
+                        <ul class="footer-language ">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Türkçe</a></li>
+                            <li><a href="#">عربى</a></li>
+                            <li><a href="#">русский</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="grid-col grid-offset-5 justify-content-end">
+                        <div class="footer-social ">
+                            <strong>Bizi Takip Edin</strong>
+                            <div class="m-btn-group">
+                                <a class="a-btn-icon-p me-4" href="twitter.com" title="twitter" target="blank">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a class="a-btn-icon-p me-4" href="facebook.com" title="facebook" target="blank">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a class="a-btn-icon-p me-4" href="instagram.com" title="instagram" target="blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a class="a-btn-icon-p me-4" href="linkedin.com" title="linkedin" target="blank">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- product list end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
