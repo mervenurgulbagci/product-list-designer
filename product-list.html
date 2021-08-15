@@ -13,54 +13,45 @@
 
 <body>
     <header class="p-header">
-        <div class="container">
+        <div class="container-p">
             <div class="header-top">
-                <div class="header-top-item">
-                    <a href="#">Kampanyalar</a>
-                    <a href="#">Yardım</a>
-                    <a href="#">Neden Pasaj?</a>
+                <div class="header-top-items">
+                    <a href="#" class="header-top-item">Kampanyalar</a>
+                    <a href="#" class="header-top-item">Yardım</a>
+                    <a href="#" class="header-top-item">Neden Pasaj?</a>
                 </div>
             </div>
             <div class="header-mid">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="img/acme-logo.png" alt="logo">
-                        </a>
-
-                        <div class="search-area" style="z-index: 15;">
-                            <form class="search-area-form" id="search-area-form">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="list-style-type: none;">
+                    <div class="container-fluid">
+                        <div class="logo">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/acme-logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="search-area" style="z-index: 15; border-radius: 0.5rem;">
+                            <form class="search-area-form" id="search-area-form" style="list-style-type: none;">
                                 <button class="btn-search" type="submit">
                                     <i class="bi-search"></i>
                                 </button>
-                                <input class="form-control me-2" type="search" placeholder="Aranacak ürün adı"
-                                    aria-label="Search">
+                                <input class="form-control me-2" id="search-form-input" type="search"
+                                    placeholder="Aranacak ürün adı" aria-label="Search">
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="all-categories" data-bs-toggle="dropdown"
+                                                aria-expanded="false">Tüm Kategoriler <i class="bi bi-chevron-down"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </form>
                         </div>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <div class="tum-kategoriler">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link " href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false"> 
-                                            <i class="bi bi-chevron-down"></i>
-                                            Tüm Kategoriler
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Android Telefonlar</a></li>
-                                            <li><a class="dropdown-item" href="#">Giyilebilir Teknolojiler</a></li>
-                                            <li><a class="dropdown-item" href="#">İOS Telefonlar</a></li>
-                                            <li><a class="dropdown-item" href="#">Tabletler</a></li>
-                                        </ul>
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" style="list-style-type: none;">
                             <div class="person-circle">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button"
-                                    aria-expanded="false" style="display: flex;"> 
-                                  
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-expanded="false"
+                                    style="display: flex;">
                                     <i class="bi bi-person-circle"></i>
                                     Hesabım
                                     <i class="bi bi-chevron-down"></i>
@@ -72,117 +63,135 @@
                             </ul>
                         </li>
                         <a class="sepet" href="#">
-                            <i class="bi-basket"></i>
+                            <i class="bi bi-cart4"></i>
                             Sepetim
                             <span class="header-basket-item">3</span>
                         </a>
-                       
+
                     </div>
                 </nav>
             </div>
 
             <div class="header-bottom">
-                <a href="#">iPhone</a>
-                <a href="#">iPad</a>
-                <a href="#">Mac</a>
-                <a href="#">AppleTV</a>
-                <a href="#">Watch</a>
-                <a href="#">Aksesuar</a>
+                <a class="header-bottom-item" href="#"><img
+                        src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" /></a>
+                <a class="header-bottom-item" href="#" aria-current="page">iPhone</a>
+                <a class="header-bottom-item" href="#">iPad</a>
+                <a class="header-bottom-item" href="#">Mac</a>
+                <a class="header-bottom-item" href="#">AppleTV</a>
+                <a class="header-bottom-item" href="#">Watch</a>
+                <a class="header-bottom-item" href="#">Aksesuar</a>
             </div>
 
         </div>
         <!--Container-p bitti-->
     </header><!-- header class sonlandı-->
-    <!-- product list start-->
+    <main class="p-homepage">
+        <section class="m-p-section breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
+            style="--bs-breadcrumb-divider:'>'">
+            <div class="container">
+                <div class="p-footer-top">
+                    <ul class="a-p-breadcrumb" aria-label="Breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item"><a href="#">Apple</a></li>
+                        <li class="breadcrumb-item"><a href="#">iPhone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="container" class="white" data-pasaj-list="true">
+            <!-- product list start-->
+            <h1 style="font-size: xx-large; margin: 10px;" class="product-list__title text-center">iPhone</h1>
+            <div class="container-product d-flex justify-content-center align-items-center ">
 
-    <div class="container-product d-flex justify-content-center align-items-center ">
-        <div class="row row-cols-4 row-cols-lg-3 g-2 g-lg-3 d-flex justify-content-center align-items-center ">
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
+                <div class="row row-cols-4 row-cols-lg-3 g-2 g-lg-3 d-flex justify-content-center align-items-center ">
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column
+                            <figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column<figure>
+                                <img src="img/iphone11.png" alt="iphone 11">
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column
-                    <figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-3 border bg-light">Row column<figure>
-                        <img src="img/iphone11.png" alt="iphone 11">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-
+        </section>
+    </main>
     <footer class="p-footer">
         <section class="m-p-section breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
             style="--bs-breadcrumb-divider:'>'">
