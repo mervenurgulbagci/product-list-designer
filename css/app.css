@@ -12,7 +12,7 @@ body {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    font-family: Helvetica,Calibri, 'Roboto', sans-serif;
+    font-family: GrefcliffCF,Helvetica,Calibri,sans-serif;
     font-weight: 300;
     letter-spacing: .5px;
 }
@@ -28,28 +28,24 @@ a{
 }
 .header-top{
     display: flex;
-    padding: 17px 0;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
+    padding-top: 20px;
+    margin-right: 40px;
 }
 
-.header-top-items{
-    margin-left: 900px;
-}
-.header-top-item
-{
-    margin-left: 20px;
+.header-top-item{ 
     color: #253342;
     font-size: 13px;
     font-weight: 500;
-    line-height: 20px;    
+    line-height: 20px;
+    margin-right: 10px;
 }
+
 .btn-search i{
     display: inline-block;
 }
 .btn-search{
-    width: 44px;
-    height: 44px;
+    width: 54px;
+    height: 54px;
     border: 0;
     outline: 0;
     display: flex;
@@ -70,24 +66,41 @@ i{
     letter-spacing: 0;
 }
 .search-area-form{
-   
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
+    position: relative;
 }
 .search-area{
+    background-color: #bec1c542;
     height: 60px;
     padding: 8px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     width: 780px;
-    margin-right: 10px;
-    position: relative;
+   margin-left: 10px;
+   margin-right: 10px;
 }
 #search-form-input{
+    color: #bec1c542;
     font-size: 16px;
     font-weight: 500;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
+    position: relative;
+    
+}
+#navbarSupportedContent
+{
+    border-radius: 5px;
+    color:white;
+    margin-top: 1px;
+    margin-left: 400px;
+    background-color:#fff;
+    width: 150px;
+    height: 40px;    
+    position:absolute;
+    display: flex;
+    font-weight: 500;
 }
 
 input{
@@ -104,16 +117,7 @@ button,input,select,textarea{
     background: 0 0;
     line-height: 1;
 }
-#navbarSupportedContent
-{
-    background-color:#fff;
-    width: 70px;
-    height: 40px;    
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-}
+
 .header-basket-item{
     position: absolute;
     top: 50%;
@@ -132,21 +136,7 @@ button,input,select,textarea{
     font-size: 16px;
     font-weight: 500;
 }
-#all-categories{
-    border-radius: 5px;
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    color: #253342;
-    font-weight: 500;
-    font-size: 16px;
-    box-sizing: border-box;
-    position: relative;
-    align-items: center;
-}
-#all-categories i{
-    margin-right: 10px;
-}
+
 i{
     margin-top: 4px;
     margin-right: 5px;
@@ -160,27 +150,34 @@ i{
     border-radius: 5px;
     border: solid 1px #dee3ed;
     background-color:#fff;
-    height: 50px;
+    height: 60px;
+    width: 180px;
     color: #253342;
     font-weight: 500;
     font-size: 16px;
     box-sizing: border-box;
-    position: relative;
     align-items: center;
+    position: relative;
+    padding: 20 26px;
+    align-items: center;
+    margin-right: 10px;
 }
 .person-circle i{
     position: relative;
 }
 .sepet{
+    color: #253342;
     background-color: #ffc900;
-    width: 160px;
-    height: 50px;
+    width: 180px;
+    height: 60px;
     border-radius: 5px;
     position: relative;
     display: flex;
     padding: 0 26px;
     align-items: center;
     font-weight: 500;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 .sepet i.bi-cart4{
     margin-right: 12px;
@@ -205,6 +202,10 @@ i{
     margin-right: 30px;
     margin-bottom: 0;
 }
+.m-p-section{
+    text-align: center;
+    
+}
 .header-mid{
     margin-bottom: 10px;
     margin-top: 5px;
@@ -212,24 +213,63 @@ i{
     align-items: center;
 }
 .header-bottom{
+    margin-right: 20px;
     flex-wrap: wrap;
     display: flex;
-    margin-top: 10px;
+    margin-top: 1px;
     text-align: center;
+}
+.iphone-types{
+    margin-right: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 1px;
+    text-align: center;
+
+}
+.iphone-types-item{
+    display: flex;
+    align-items: center;
+    z-index: 14;
+    padding: 10px 0;
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
 .header-bottom-item{
+    margin-top: 15px;
     text-align: center;
-display: inline-block;
-color: #253342;
-font-weight: bold;
-font-size: 16px;
-font-weight: 500;
-margin-right: 24px;
-line-height: 24px;
-position: relative;
-z-index: 14;
-padding: 10px 0;
+    display: inline-block;
+    color: #253342;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 40px;
+    line-height: 24px;
+    position: relative;
+    z-index: 14;
+    padding: 10px 0;
 }
+.m-p-section-top{
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    opacity: 0.6;
+    text-shadow: #565656;
+    margin-top:30px;
+  
+}
+.dropdown-sort{
+    flex-wrap: wrap;
+    
+    text-align: center;
+    padding: 10px 0;
+    align-items: center;
+    margin-left: 100px;
+}
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, 
 dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, 
 hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, 

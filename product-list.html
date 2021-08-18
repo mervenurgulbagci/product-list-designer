@@ -8,13 +8,16 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <title>Product List</title>
 </head>
 
 <body>
     <header class="p-header">
         <div class="container-p">
-            <div class="header-top">
+            <div class="header-top justify-content-end">
                 <div class="header-top-items">
                     <a href="#" class="header-top-item">Kampanyalar</a>
                     <a href="#" class="header-top-item">Yardım</a>
@@ -23,7 +26,7 @@
             </div>
             <div class="header-mid">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="list-style-type: none;">
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="logo">
                             <a class="navbar-brand" href="#">
                                 <img src="img/acme-logo.png" alt="logo">
@@ -38,7 +41,7 @@
                                     placeholder="Aranacak ürün adı" aria-label="Search">
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <ul class="navbar-nav  mb-2 mb-lg-0">
                                         <li class="nav-item dropdown">
                                             <a class="nav-link" href="#" id="all-categories" data-bs-toggle="dropdown"
                                                 aria-expanded="false">Tüm Kategoriler <i class="bi bi-chevron-down"></i>
@@ -67,18 +70,17 @@
                             Sepetim
                             <span class="header-basket-item">3</span>
                         </a>
-
                     </div>
                 </nav>
             </div>
 
-            <div class="header-bottom">
-                <a class="header-bottom-item" href="#"><img
+            <div class="header-bottom justify-content-center">
+                <a class="header-bottom-item-logo" href="#" style="margin-right: 30px; margin-top: 10px;"><img
                         src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" /></a>
-                <a class="header-bottom-item" href="#" aria-current="page">iPhone</a>
-                <a class="header-bottom-item" href="#">iPad</a>
+                <a class="header-bottom-item" style="font-weight: bold;" href="#" title="İPhone">iPhone</a>
+                
                 <a class="header-bottom-item" href="#">Mac</a>
-                <a class="header-bottom-item" href="#">AppleTV</a>
+                <a class="header-bottom-item" href="#">Apple Tv</a>
                 <a class="header-bottom-item" href="#">Watch</a>
                 <a class="header-bottom-item" href="#">Aksesuar</a>
             </div>
@@ -87,10 +89,10 @@
         <!--Container-p bitti-->
     </header><!-- header class sonlandı-->
     <main class="p-homepage">
-        <section class="m-p-section breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
+        <section class="m-p-section-top breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
             style="--bs-breadcrumb-divider:'>'">
             <div class="container">
-                <div class="p-footer-top">
+                <div class="p-homepage-top">
                     <ul class="a-p-breadcrumb" aria-label="Breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
                         <li class="breadcrumb-item"><a href="#">Apple</a></li>
@@ -99,9 +101,69 @@
                 </div>
             </div>
         </section>
+
         <section id="container" class="white" data-pasaj-list="true">
             <!-- product list start-->
-            <h1 style="font-size: xx-large; margin: 10px;" class="product-list__title text-center">iPhone</h1>
+            <h1 style="font-size: xx-large; margin: 10px; color: black;" class="product-list__title text-center">iPhone
+            </h1>
+            <div class="iphone-types">
+                <div class="container">
+                    <div class="iphone-types-item">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
+                        İPhone 12
+
+                    </div>
+                    <div class="iphone-types-item">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
+                        İPhone 11
+
+                    </div>
+                    <div class="iphone-types-item">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
+                        İPhone X
+
+                    </div>
+                    <div class="iphone-types-item">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
+                        İPhone 8
+
+                    </div>
+                    <div class="iphone-types-item">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
+                        İPhone 7
+
+                    </div>
+                    <div class="iphone-types-item">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
+                        İPhone SE
+
+                    </div>
+                    <div class="iphone-types-item">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
+                        İPhone 6
+
+                    </div>
+                </div>
+
+            </div>
+            <section class="sorting">
+                <div class="sorting-and-comparison-mode d-flex">
+                    <div class="dropdown-sort" >
+                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                         Sırala <i class="bi bi-chevron-down"></i>
+                        </button>
+                       
+                        <ul class="dropdown-menu justify-content-center" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">En yüksek fiyat</a></li>
+                          <li><a class="dropdown-item" href="#">En düşük fiyat</a></li>
+                          <li><a class="dropdown-item" href="#">En çok satanlar</a></li>
+                        </ul>
+                   
+                      </div>
+    
+                </div>
+            </section>
+            
             <div class="container-product d-flex justify-content-center align-items-center ">
 
                 <div class="row row-cols-4 row-cols-lg-3 g-2 g-lg-3 d-flex justify-content-center align-items-center ">
