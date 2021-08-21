@@ -29,7 +29,7 @@ a{
 .header-top{
     display: flex;
     padding-top: 20px;
-    margin-right: 40px;
+    
 }
 
 .header-top-item{ 
@@ -79,11 +79,11 @@ i{
     display: flex;
     align-items: center;
     width: 780px;
-   margin-left: 10px;
-   margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #search-form-input{
-    color: #bec1c542;
+    background-color:#dde8f342;
     font-size: 16px;
     font-weight: 500;
     position: relative;
@@ -92,15 +92,15 @@ i{
 #navbarSupportedContent
 {
     border-radius: 5px;
-    color:white;
-    margin-top: 1px;
-    margin-left: 400px;
-    background-color:#fff;
+    margin-top: 8px;
+    margin-left: 440px;
+    background-color:white;
     width: 150px;
     height: 40px;    
     position:absolute;
     display: flex;
     font-weight: 500;
+    z-index: 1;
 }
 
 input{
@@ -158,13 +158,22 @@ i{
     box-sizing: border-box;
     align-items: center;
     position: relative;
-    padding: 20 26px;
-    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
     margin-right: 10px;
 }
 .person-circle i{
     position: relative;
+
 }
+.person-circle i.bi-person-circle{
+    margin-right: 15px;
+
+}
+.person-circle i.bi-chevron-down{
+    margin-left: 15px;
+}
+
 .sepet{
     color: #253342;
     background-color: #ffc900;
@@ -191,12 +200,42 @@ i{
 }
 .container-p{
     margin-top: 40px;
-    width: 1200px;
+    width: 1350px;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
   
 }
+.dropdown-sort{
+    height: 60px;
+    width: 300px;
+    display: flex;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.switch-toggle{
+    margin-left: 550px;
+    box-sizing: border-box;
+    height: 60px;
+    width: 300px;
+    text-align: justify;
+    padding:  20px 0px;
+    display: flex;
+    position: relative;
+}
+.row-switch{
+    display: flex;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
 .logo{
     width: 120px;
     margin-right: 30px;
@@ -214,7 +253,7 @@ i{
 }
 .header-bottom{
     margin-right: 20px;
-    flex-wrap: wrap;
+  box-sizing: border-box;
     display: flex;
     margin-top: 1px;
     text-align: center;
@@ -223,51 +262,40 @@ i{
     margin-right: 20px;
     flex-wrap: wrap;
     display: flex;
-    margin-top: 1px;
+   
     text-align: center;
 
 }
 .iphone-types-item{
-    display: flex;
     align-items: center;
     z-index: 14;
-    padding: 10px 0;
+    padding: 1px 0;
     display: inline-block;
     position: relative;
-    margin-top: 30px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    margin-right: 1px;
 }
 .header-bottom-item{
     margin-top: 15px;
     text-align: center;
     display: inline-block;
     color: #253342;
-    font-weight: bold;
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
     margin-right: 40px;
     line-height: 24px;
     position: relative;
-    z-index: 14;
     padding: 10px 0;
 }
 .m-p-section-top{
-    flex-wrap: wrap;
     display: flex;
     text-align: center;
     opacity: 0.6;
     text-shadow: #565656;
-    margin-top:30px;
-  
+    margin-top:10px;
 }
-.dropdown-sort{
-    flex-wrap: wrap;
-    
-    text-align: center;
-    padding: 10px 0;
-    align-items: center;
-    margin-left: 100px;
+
+.container-product{
+    color: white;
 }
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, 

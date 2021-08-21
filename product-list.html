@@ -38,7 +38,7 @@
                                     <i class="bi-search"></i>
                                 </button>
                                 <input class="form-control me-2" id="search-form-input" type="search"
-                                    placeholder="Aranacak ürün adı" aria-label="Search">
+                                    style="border:none" placeholder="Aranacak ürün adı" aria-label="Search">
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav  mb-2 mb-lg-0">
@@ -50,6 +50,7 @@
                                     </ul>
                                 </div>
                             </form>
+
                         </div>
                         <li class="nav-item dropdown" style="list-style-type: none;">
                             <div class="person-circle">
@@ -74,178 +75,161 @@
                 </nav>
             </div>
 
-            <div class="header-bottom justify-content-center">
-                <a class="header-bottom-item-logo" href="#" style="margin-right: 30px; margin-top: 10px;"><img
-                        src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" /></a>
+            <div class="header-bottom justify-content-center" style="background-color: white;">
+                <a class="header-bottom-item-logo" href="#" style="margin-right: 30px; margin-top: 10px;">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" /></a>
                 <a class="header-bottom-item" style="font-weight: bold;" href="#" title="İPhone">iPhone</a>
-                
                 <a class="header-bottom-item" href="#">Mac</a>
                 <a class="header-bottom-item" href="#">Apple Tv</a>
                 <a class="header-bottom-item" href="#">Watch</a>
                 <a class="header-bottom-item" href="#">Aksesuar</a>
             </div>
-
+            <hr style="color:  #bec1c542;">
         </div>
+
         <!--Container-p bitti-->
     </header><!-- header class sonlandı-->
+
     <main class="p-homepage">
-        <section class="m-p-section-top breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
+        <section class="m-p-section-top breadcrumb breadcrumb--secondary justify-content-center" aria-label="breadcrumb"
             style="--bs-breadcrumb-divider:'>'">
-            <div class="container">
-                <div class="p-homepage-top">
-                    <ul class="a-p-breadcrumb" aria-label="Breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
-                        <li class="breadcrumb-item"><a href="#">Apple</a></li>
-                        <li class="breadcrumb-item"><a href="#">iPhone</a></li>
-                    </ul>
-                </div>
+            <div class="p-homepage-top">
+                <ul class="a-p-breadcrumb" aria-label="Breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                    <li class="breadcrumb-item"><a href="#">Apple</a></li>
+                    <li class="breadcrumb-item"><a href="#">iPhone</a></li>
+                </ul>
             </div>
         </section>
 
-        <section id="container" class="white" data-pasaj-list="true">
-            <!-- product list start-->
-            <h1 style="font-size: xx-large; margin: 10px; color: black;" class="product-list__title text-center">iPhone
-            </h1>
-            <div class="iphone-types">
-                <div class="container">
-                    <div class="iphone-types-item">
-                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
-                        İPhone 12
-
-                    </div>
-                    <div class="iphone-types-item">
-                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
-                        İPhone 11
-
-                    </div>
-                    <div class="iphone-types-item">
-                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
-                        İPhone X
-
-                    </div>
-                    <div class="iphone-types-item">
-                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
-                        İPhone 8
-
-                    </div>
-                    <div class="iphone-types-item">
-                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
-                        İPhone 7
-
-                    </div>
-                    <div class="iphone-types-item">
-                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
-                        İPhone SE
-
-                    </div>
-                    <div class="iphone-types-item">
-                        <img src="https://img.icons8.com/material-outlined/24/000000/iphone--v2.png" />
-                        İPhone 6
-
-                    </div>
+        <h1 style="font-size: xx-large; margin: 10px; color: black; font-weight: bold;"
+            class="product-list__title text-center">iPhone
+        </h1>
+        <div class="iphone-types d-flex">
+            <div class="container">
+                <div class="iphone-types-item">
+                    <img src="img/iphone12.jpg" />
                 </div>
-
+                <div class="iphone-types-item">
+                    <img src="img/iphone11.jpg" />
+                </div>
+                <div class="iphone-types-item">
+                    <img src="img/iphoneX.jpg" />
+                </div>
+                <div class="iphone-types-item">
+                    <img src="img/iphone8.jpg" />
+                </div>
+                <div class="iphone-types-item">
+                    <img src="img/iphone7.jpg" />
+                </div>
+                <div class="iphone-types-item">
+                    <img src="img/iphoneSE.jpg" />
+                </div>
+                <div class="iphone-types-item">
+                    <img src="img/iphone6.jpg" />
+                </div>
             </div>
-            <section class="sorting">
-                <div class="sorting-and-comparison-mode d-flex">
-                    <div class="dropdown-sort" >
-                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                         Sırala <i class="bi bi-chevron-down"></i>
-                        </button>
-                       
-                        <ul class="dropdown-menu justify-content-center" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">En yüksek fiyat</a></li>
-                          <li><a class="dropdown-item" href="#">En düşük fiyat</a></li>
-                          <li><a class="dropdown-item" href="#">En çok satanlar</a></li>
-                        </ul>
-                   
-                      </div>
-    
-                </div>
-            </section>
-            
-            <div class="container-product d-flex justify-content-center align-items-center ">
+        </div>
 
+        <section id="container" data-pasaj-list="true" style="background-color: #fafbfd;">
+            <div class="row-switch" >
+                <div class="dropdown-sort">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected> Sırala</option>
+                        <option value="1">En çok satanlar</option>
+                        <option value="2">En düşük fiyat</option>
+                        <option value="3">En yüksek fiyat</option>
+                    </select>
+                </div>
+                <div class="switch-toggle">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Karşılaştırma Modu</label>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    </div>
+                </div>
+            </div>
+            <!-- product list start-->
+            <div class="container-product d-flex justify-content-center align-items-center ">
                 <div class="row row-cols-4 row-cols-lg-3 g-2 g-lg-3 d-flex justify-content-center align-items-center ">
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
+                           <div class="product-self-body"></div>
+                           <div class="product-self-footer"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="p-3 border bg-light">Row column
+                        <div class="p-3 border bg-light">
                             <figure>
-                                <img src="img/iphone11.png" alt="iphone 11">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="p-3 border bg-light">Row column<figure>
                                 <img src="img/iphone11.png" alt="iphone 11">
                             </figure>
                         </div>
@@ -255,7 +239,7 @@
         </section>
     </main>
     <footer class="p-footer">
-        <section class="m-p-section breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
+        <section class="m-p-section-footer breadcrumb breadcrumb--secondary" aria-label="breadcrumb"
             style="--bs-breadcrumb-divider:'>'">
             <div class="container">
                 <div class="p-footer-top">
